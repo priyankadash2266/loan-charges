@@ -1,0 +1,26 @@
+//a program to calculate pending loan....................Priyanka Dash(RA2111003011594)
+#include <stdio.h>
+int main()
+{
+    int amt,mnt,unit;
+    scanf("%d%d",&unit,&mnt); //units and months are accepted
+    if (mnt==1)
+    {
+        amt=1000;
+        printf("%d",amt);
+    }
+   else if (mnt>1&&mnt<=6)
+    {
+        amt= 1000 + (mnt*unit);
+        printf("%d",amt);
+    }
+    else
+    {
+        amt=8000;
+        printf("%d",amt);
+    }
+    
+    return 0;
+}
+//in the first month basic payment 1000 rupees to be paid and then till the sixth month second else if condition to be executed
+//and then till the 12th month each month 8000 rupees to be paid so in this way entire loan of the thing will be paid in a year
